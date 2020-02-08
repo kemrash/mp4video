@@ -1,0 +1,7 @@
+services:
+    kemrash.mp4video.listener:
+        class: kemrash\mp4video\event\listener
+        arguments:
+
+        tags:
+            - { name: event.listener }

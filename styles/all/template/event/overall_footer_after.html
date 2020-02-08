@@ -1,16 +1,10 @@
-<!-- INCLUDEJS @kemrash_mp4video/mediaelement-and-player.min.js -->
-<script type="text/javascript">// <![CDATA[
-	$(document).ready(function() {
-		$('video').mediaelementplayer({
-			pluginPath: 'build/',					
-			stretching: 'responsive',
-			pauseOtherPlayers: true					
-		});
-		$('audio').mediaelementplayer({
-			pluginPath: 'build/',					
-			stretching: 'responsive',
-			pauseOtherPlayers: true					
-		});
-	});
-// ]]>
+<!-- IF S_VIEWTOPIC or S_IN_UCP or S_IN_POSTING or S_DISPLAY_SEARCH -->
+{% INCLUDEJS '@kemrash_mp4video/plyr.min.js' %}
+<script>
+	const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
 </script>
+<script>
+	$('.bbcode-mp3').attr('title', '{L_MP3_HELPLINE}');
+	$('.bbcode-mp4video').attr('title', '{L_MP4_HELPLINE}');
+</script>
+<!-- ENDIF -->

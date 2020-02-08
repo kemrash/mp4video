@@ -1,31 +1,32 @@
 {
    "name": "kemrash/mp4video",
    "type": "phpbb-extension",
-   "description": "KEMnEP mp4video",
-   "homepage": "",
-   "version": "0.0.3",
-   "license": "GPL-2.0",
+   "description": "Бб коды mp4video и mp3",
+   "homepage": "https://github.com/kemrash/mp4video",
+   "version": "0.0.4",
+   "time": "2020-02-09",
+   "license": "GPL-2.0-only",
    "authors": [
    {
          "name": "KEMnEP",
-         "username": "KEMnEP",
          "email": "",
          "homepage": "",
          "role": ""
       }
    ],
    "require": {
-      "php": ">=5.3.3"
-   },
-   "extra": {
-      "display-name": "KEMnEP mp4video",
-      "soft-require": {
-            "phpbb/phpbb": ">=3.2.x"
-      },
-      "version-check": {
-         "host": "",
-         "directory": "",
-         "filename": ""
-      }
-   }
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "Mp4video (mp4, webm, mp3.)",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.2.0,"
+        },
+        "version-check": {
+            "host": "kemnep.ru",
+            "directory": "/version_check_phpbb3",
+            "filename": "mp4video.html"
+        }
+    }
 }
