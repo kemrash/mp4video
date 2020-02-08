@@ -1,0 +1,31 @@
+{
+   "name": "kemrash/mp4video",
+   "type": "phpbb-extension",
+   "description": "KEMnEP mp4video",
+   "homepage": "",
+   "version": "0.0.3",
+   "license": "GPL-2.0",
+   "authors": [
+   {
+         "name": "KEMnEP",
+         "username": "KEMnEP",
+         "email": "",
+         "homepage": "",
+         "role": ""
+      }
+   ],
+   "require": {
+      "php": ">=5.3.3"
+   },
+   "extra": {
+      "display-name": "KEMnEP mp4video",
+      "soft-require": {
+            "phpbb/phpbb": ">=3.2.x"
+      },
+      "version-check": {
+         "host": "",
+         "directory": "",
+         "filename": ""
+      }
+   }
+}
